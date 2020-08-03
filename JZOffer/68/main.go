@@ -23,3 +23,35 @@ return Left;
 return root;
 }
 */
+
+//test pass
+
+//struct TreeNode* lowestCommonAncestor(struct TreeNode* root, struct TreeNode* p, struct TreeNode* q) {
+//if (root->val > p->val && root->val > q->val){
+//return  lowestCommonAncestor(root->left,p,q);
+//}else if (root->val < p->val && root->val < q->val) {
+//return  lowestCommonAncestor(root->right,p,q);
+//}else{
+//return root;
+//}
+//}
+
+type TreeNode struct{
+	Val int
+	Left *TreeNode
+	Right *TreeNode
+}
+
+func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode{
+	if root==nil || p==nil || q==nil{
+		return nil
+	}
+
+	if root.Val<p.Val && root.Val<q.Val{
+		return lowestCommonAncestor(root.Right,p,q)
+	}else if root.Val>p.Val && root.Val>q.Val{
+		return lowestCommonAncestor(root.Left,p,q)
+	}else{
+		return root
+	}
+}
