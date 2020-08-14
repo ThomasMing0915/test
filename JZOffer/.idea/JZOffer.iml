@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="Go" enabled="true" />
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../../go/GOWORKDIR/src/LeetCode" />
+    <content url="file://$MODULE_DIR$/../../go/GOWORKDIR/src/sort" />
+    <content url="file://$MODULE_DIR$/../../go/GOWORKDIR/src/sortTestHelper" />
+    <content url="file://$MODULE_DIR$/../../leetcode" />
+    <content url="file://$MODULE_DIR$" />
+    <content url="file://$MODULE_DIR$/../defer" />
+    <content url="file://$MODULE_DIR$/../golangCPU" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

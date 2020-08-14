@@ -14,7 +14,7 @@ func spiralOrder(matrix [][]int) []int {
 	colStart := 0
 	colEnd := len(matrix[0]) - 1
 
-	for rowStart <= rowEnd {
+	for rowStart <= rowEnd && colStart <= colEnd {
 		if rowStart == rowEnd {
 			for i := colStart; i <= colEnd; i++ {
 				res = append(res, matrix[rowStart][i])

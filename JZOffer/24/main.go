@@ -14,7 +14,7 @@ func reverseList(head *ListNode) *ListNode {
 		return nil
 	}
 
-	if head.Next == nil {
+	if head.Next == nil { //其实这个判断可以合并到下面的for中,即这里的if可以去掉
 		return head
 	}
 

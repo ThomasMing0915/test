@@ -21,6 +21,10 @@ func dfs(node *TreeNode, k int) {
 	if node == nil {
 		return
 	}
+	//add 优化
+	if gK == k {
+		return
+	}
 	dfs(node.Right, k)
 	gK++
 	if gK == k {
